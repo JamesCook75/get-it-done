@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+    {% block content %}
+        <h1>Get It Done! Login</h1>
+        <hr />
+        <form action="/login" method="Post">
+            <label>
+                <h2>Email</h2>    
+                <input type="text" name="email" value={{email}}>
+            </label><br/>
+            <label>
+                <h2>Password</h2>
+                <input type="password" name="password" />
+            </label><br/>
+            <input type="submit"  value="Login"/>
+        </form>
+        <h3>Don't have an account? <a href="/register">Register Now</a></h3>
+
+    {% endblock %}
